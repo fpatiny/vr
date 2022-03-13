@@ -35,6 +35,7 @@
             <img id="icon-mute" src="./resources/mute.png">
             <img id="icon-volume-low" src="./resources/volume-low.png">
             <img id="icon-volume-high" src="./resources/volume-high.png">
+
         </a-assets>
 
         <!-- Entities -->
@@ -68,19 +69,22 @@
         </a-entity>
 
         <!-- Lights -->
-        <a-entity light="type: spot; angle: 45; penumbra: 0.5; color: #FFF; intensity: .5" position="0 3.5 0"
-            rotation="90 0 0"></a-entity>
-        <a-entity light="type: spot; angle: 45; penumbra: 0.5; color: #FFF; intensity: 1" position="0 3.5 0"
-            rotation="-90 0 0"></a-entity>
+        <a-entity id="topLight" light="type: spot; angle: 45; penumbra: 0.5; color: white; intensity: 1"
+            position="0 3.5 0" rotation="-90 0 0"> visible="true"</a-entity>
 
         <a-entity light="type: point; color: #FFF; intensity: .5" position="0 3.5 0"></a-entity>
 
 
 
+        <!-- Source toogle-->
+
         <!-- Sky -->
         <a-sky color="#ECECEC"></a-sky>
     </a-scene>
+    <script type="text/javascript" src="js/toggleLight.js"></script>
+
 </body>
+
 
 </html>
 <!-- Generated automatically by AFRAME Exporter for Blender - https://silverslade.itch.io/a-frame-blender-exporter -->
